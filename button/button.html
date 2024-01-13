@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8" />
+        <title>guess</title>
+        <style>
+            button {
+                font-size: 25px;
+                margin-right: 10px;
+                margin-top: 10px;
+                width: 100px;
+                flex-wrap: wrap;
+            }
+            p {
+                font-size: 25px;
+                display: inline-block;
+                margin-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <button id = "button1" onclick = '
+            alert("按屁");
+            fontChangeColor(button1);
+        '>1</button>
+        <button id = "button2" onclick = '
+            showPicture();
+            fontChangeColor(button2);
+        '>2</button>
+        <button id = "button3" onclick = '
+            Rock();
+            fontChangeColor(button3);
+        '>3</button>
+    </body>
+    <script>
+        function fontChangeColor(element) {
+            element.style.color = "red";
+        }
+        function showPicture1() {
+            document.write('<img src = "picture/你很勇喔.jpg" width = "1000px"/>');
+            document.write('<a href = "button.html">back</a>');
+        }
+        function Rock() {
+            document.write('<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=pBnEAIwOwnoWqDS2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>');
+            document.write('<a href = "button.html">back</a>');
+        }
+    </script>
+</html>
